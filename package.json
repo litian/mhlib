@@ -13,6 +13,9 @@
     "url": ""
   },
   "licenses": "MIT",
+  "dependencies": {
+    "jquery": "1.11.1"
+  },
   "spm": {
     "main": "index.js",
     "dependencies": {
