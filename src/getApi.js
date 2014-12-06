@@ -1,7 +1,7 @@
 /**
  * Created by litian on 14/12/6.
  */
-var $ = require("jquery");
+var $ = require("jquery/jquery");
 function getApi(options){
     var params = [],api;
     //默认api参数

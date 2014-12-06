@@ -1,0 +1,11 @@
+{
+  "name": "mhlib",
+  "repo": "litian/mhlib",
+  "description": "lib for mishi",
+  "version": "0.0.1",
+  "keywords": [],
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
