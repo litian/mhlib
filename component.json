@@ -5,6 +5,9 @@
   "version": "1.0.1",
   "keywords": [],
   "license": "MIT",
+  "dependencies": {
+    "jquery": "1.11.1"
+  },
   "scripts": [
     "index.js"
   ]
