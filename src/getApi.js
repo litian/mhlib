@@ -1,27 +1,25 @@
 /**
  * Created by litian on 14/12/6.
  */
-var $ = require("jquery/jquery");
 function getApi(options){
-    var params = [],api;
-    //默认api参数
-    var opts = $.extend(apiOptions,options);
-    var base = options.base || "/newApi";//"http://127.0.0.1:8080/mishi-webapp";
-    delete options.base;
+    var params = [],api = "",opts = options || {};
     //组装api
-    if(!options.apiName){
+    api += options.base ? options.base : "";
+    if (options.pathname) {
+        api += options.pathname + '?';
+    } else {
         return '';
-    }else{
-        base += options.apiName + '?';
     }
     //附加参数
-    $.each(opts,function(key,value){
-        if(key != "apiName"){
-            params.push(key + '=' + value);
+    delete opts.base;
+    delete opts.pathname;
+    for(var key in opts){
+        if (opts.hasOwnProperty(key)) {
+            params.push(key + '=' + opts[key]);
         }
-    });
+    }
     //console.log(params);
-    api = base + params.join("&");
+    api = api + params.join("&");
     return api;
 }
 

@@ -19,7 +19,7 @@ Thumbs.db
 *.sublime-workspace
 node_modules/
 spm_modules/
-dist/
+components/
 tmp/
 .spm-build
 .buildpath
