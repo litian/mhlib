@@ -1,6 +1,10 @@
 {
   "name": "mhlib",
+<<<<<<< HEAD
   "version": "1.0.1",
+=======
+  "version": "1.0.2",
+>>>>>>> branch_litian
   "description": "lib for mishi",
   "keywords": [],
   "homepage": "",
@@ -14,9 +18,8 @@
   },
   "licenses": "MIT",
   "spm": {
-    "main": "index.js",
+    "output": ["mhlib.js"],
     "dependencies": {
-      "jquery": "1.11.1"
     },
     "devDependencies": {
       "expect.js": "0.3.1"
