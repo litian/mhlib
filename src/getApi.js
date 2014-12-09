@@ -1,6 +1,7 @@
 /**
  * Created by litian on 14/12/6.
  */
+"use strict";
 function getApi(options){
     var params = [],api = "",opts = options || {};
     //组装api
